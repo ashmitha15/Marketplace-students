@@ -1,0 +1,101 @@
+$blue: #8faed9;
+$grey: #dae2ed;
+$darkblue: #3b4554;
+$pink: #ffc4d5;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    color: $darkblue;
+    background-color: $grey;
+    overflow-x: hidden;
+    @media screen and (min-device-width: 200px) and (max-device-width: 768px) { 
+        
+    }
+    @media only screen and (min-width : 768px) {
+    // background-color: pink;
+    }
+}
+.header-wrapper {
+    @media screen and (min-device-width: 200px) and (max-device-width: 768px) { 
+        background-color: $blue;
+        height: 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+        border: 1px solid white;
+        .heading {
+            width: 20%;
+            font-size: 12px;
+            font-family: cursive;;
+        }
+        .nav-bar {
+            display: contents;
+            font-size: 10px;
+            padding: 5px;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+    @media only screen and (min-width : 768px) {
+        background-color: $blue;
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 35px;
+        border: 1px solid white;
+        .heading {
+            width: 50%;
+            font-size: 20px;
+            font-family: cursive;;
+        }
+        .nav-bar {
+            display: contents;
+            a {
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+.input {
+    input {
+        height: 35px;
+        margin: 5px;
+        width: 100%;
+    }
+}
+.button {
+    background: $darkblue;
+    height: 40px;
+    color: white;
+    border-radius: 10%;
+    width: 100%;
+    margin: 5px;
+}
+.drop {
+    .btn-primary {
+        background-color: $blue !important;
+        border: none !important;
+    }
+} 
+.label {
+    font-family: cursive;
+    font-style: italic;
+    font-size: 14px;
+}
+.search {
+    @media screen and (min-device-width: 200px) and (max-device-width: 768px) { 
+        max-width: 280px;
+    }
+    display: flex;
+    .input {
+        width: 250px;
+    }
+    .button {
+        width: 100px;
+        height: 35px;
+    }
+}
